@@ -1,0 +1,38 @@
+Q1.
+
+Input string from the user (Ex: “I love my Company”)
+
+Find the length of the string
+
+Find a duplicate word from a string
+
+Replace the word with its count of stars (). (Ex: “my” = “**”)
+
+
+ 
+
+Q2.
+
+Write a program to reverse an array without using any extra space (variable or array).
+
+
+ 
+
+Q3. (Don’t use string functions)
+
+Reverse an integer (Ex: 123 = 321)
+
+Count the digits (Ex: 123 = 3)
+
+
+ 
+
+Q4.
+
+Write down a method boolean isNameValid(String name).
+
+A name is valid if the following conditions are satisfied:
+
+• It does not contain any vowel more than once.
+
+• If the name contains two ‘S’, then there is not any ‘T’ in between them (both in capital cases).

@@ -1,0 +1,88 @@
+Q1. Write a program to generate the below pattern.
+
+\*****/         
+
+*\***/*         
+
+**\*/**         
+
+***/***         
+
+**/*\**        
+
+*/***\*         
+
+/*****\
+
+Q2.  
+
+Make a StringUtils class that contains the following methods
+
+NOTE: You can use only String.charAt(), methods to code this problem. (Don't use any other inbuilt functions)
+
+
+	
+static int countChar(String str,char ch)
+	
+- Returns the occurrence of the given character in the given string (str).
+	
+static String substring(String str, int start, int end)
+	
+- Returns a substring from the start index to the end index with all validation checks.
+	
+static String[] split(String str,char ch)
+	
+- Returns an array of strings broken according to the occurrence of the given character with validation checks.
+	
+static Boolean hasPattern(String str, String pattern)
+	
+- Returns true if the given string (pattern) is found in the main string (str) otherwise false.
+	
+static Boolean allWordsContainsChar(String str,char ch)
+	
+- Returns true if all words of the given string (str) contain the given character (ch)  otherwise false.
+	
+static String reverse(String str)
+	
+- Returns the reverse of the String (Without using an extra String or array)
+	
+static String reverseVowels(String str)
+	
+- Reverse only all the vowels in the string and return it ( Example : Input: s = "liipcoce"
+	
+Output: "leopcici"
+	
+Input: s = "hello"
+	
+Output: "holle"
+	
+)
+
+
+Q3.
+
+Given a string s, find the length of the longest substring without repeating characters.
+
+Input: s = "abcabcbb"
+
+Output: 3
+
+Explanation: The answer is "abc", with a length of 3.
+
+Input: s = "pwwkew"
+
+Output: 3
+
+Explanation: The answer is "wke", with a length of 3.
+
+Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
+
+Input: s = "bbbbb"
+
+Output: 1
+
+Explanation: The answer is "b", with a length of 1.
+
+
+	
+s consists of English letters, digits, symbols, and spaces.
