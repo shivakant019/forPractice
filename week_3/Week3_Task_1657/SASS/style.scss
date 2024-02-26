@@ -1,0 +1,176 @@
+@import "./Abstract/variables";
+@import "./Abstract/constants";
+@import "./Abstract/mixing";
+@import "./Base/topography";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $fontStyle;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+
+  &__left {
+    background-color: $colorWhite;
+    width: 33%;
+
+    @include backgroundIcons();
+
+    form {
+      position: relative;
+      height: 96%;
+    }
+
+    &__container {
+      padding-top: 30px;
+      padding-left: 35px;
+
+      &__login {
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 18px;
+      }
+
+      &__welcome {
+        font-size: $fontMedium;
+        color: $colorGrey;
+        margin-bottom: 30px;
+      }
+
+      &__form {
+        padding-left: 8px;
+
+        &__email {
+          margin-right: 50%;
+          font-size: $fontSmaller;
+          color: $colorGrey;          
+        }
+
+        &__input {
+          font-size: $fontSmall;
+          border-style: none;
+          border-bottom: 1px solid $colorGrey;
+          width: 87%;
+          height: 25px;
+          margin-bottom: 50px;
+          outline: none;
+
+          &__password{
+            background: url(../Assets/eye.png);
+            background-repeat: no-repeat;
+            background-position-x: right;
+            background-position-y: center;
+            background-size: 1.5rem;
+            margin-bottom: 1.5rem;
+          }
+        }
+
+        
+      }
+      &__forgot {
+        font-size: $fontSmaller;
+        font-weight: 600;
+        padding-bottom:0.5rem;
+        margin-bottom: 20px;
+        margin-left:0.5rem;
+
+        a{
+          text-decoration: none;
+          color: $colorBlue;
+        }
+      }
+
+      &__btn {
+        border-radius: 60px;
+        border-width: 0px;
+        font-size: $fontMedium;
+        color: $colorWhite;
+        background-color: $colorPulple;
+        width: 120px;
+        height: 29px;
+        cursor: pointer;
+      }
+    }
+
+    &__footer {
+      text-align: center;
+      font-size: $fontSmaller;
+
+      a{
+        text-decoration: none;
+        color:$colorBlue
+      }
+    }
+  }
+
+  &__right {
+    width: 67%;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../Assets/bg.avif");
+    background-size: cover;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 23px;
+    padding-bottom: 8px;
+
+    &__header {
+      width: 100%;
+      height: 13%;
+
+      &__items {
+        list-style: none;
+        display: flex;
+        justify-content: right;
+        color: $colorWhite;
+        gap: 15px;
+        font-size: $fontMedium;
+
+        a{
+          color: #fff;
+          text-decoration:none;
+        }
+      }
+    }
+
+    &__body {
+      height: 600px;
+      color: $colorWhite;
+      margin-left: 65px;
+      margin-top: 90px;
+
+      &__title {
+        font-size: 37px;
+        font-weight: 500;
+      }
+
+      &__content {
+        font-size: $fontMedium;
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 4;
+
+        &__items {
+          @include flexCenter();
+          width: 50%;
+
+          a{
+            color:#fff;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    &__footer {
+      font-size: $fontMedium;
+      display: flex;
+      color: $colorWhite;
+      background: transparent;
+      justify-content: space-between;
+    }
+  }
+}

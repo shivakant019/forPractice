@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+}
+.main__left {
+  background-color: white;
+  width: 33%;
+}
+.main__left__topIcon {
+  right: 50%;
+  top: 1%;
+  position: absolute;
+}
+.main__left__middleIcon {
+  right: 2.5%;
+  top: 10%;
+  position: absolute;
+}
+.main__left__bottomIcon {
+  right: 12%;
+  top: 80%;
+  position: absolute;
+}
+.main__left form {
+  position: relative;
+  height: 96%;
+}
+.main__left__container {
+  padding-top: 30px;
+  padding-left: 35px;
+}
+.main__left__container__login {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.main__left__container__welcome {
+  font-size: 14px;
+  color: grey;
+  margin-bottom: 30px;
+}
+.main__left__container__form {
+  padding-left: 8px;
+}
+.main__left__container__form__email {
+  margin-right: 50%;
+  font-size: 12px;
+  color: grey;
+}
+.main__left__container__form__input {
+  font-size: 12px;
+  border-style: none;
+  border-bottom: 1px solid grey;
+  width: 87%;
+  height: 25px;
+  margin-bottom: 50px;
+  outline: none;
+}
+.main__left__container__form__input__password {
+  background: url(../Assets/eye.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  background-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.main__left__container__forgot {
+  font-size: 12px;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+  margin-bottom: 20px;
+  margin-left: 0.5rem;
+}
+.main__left__container__forgot a {
+  text-decoration: none;
+  color: #4f5ac1;
+}
+.main__left__container__btn {
+  border-radius: 60px;
+  border-width: 0px;
+  font-size: 14px;
+  color: white;
+  background-color: #4a57bf;
+  width: 120px;
+  height: 29px;
+  cursor: pointer;
+}
+.main__left__footer {
+  text-align: center;
+  font-size: 12px;
+}
+.main__left__footer a {
+  text-decoration: none;
+  color: #4f5ac1;
+}
+.main__right {
+  width: 67%;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../Assets/bg.avif");
+  background-size: cover;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 23px;
+  padding-bottom: 8px;
+}
+.main__right__header {
+  width: 100%;
+  height: 13%;
+}
+.main__right__header__items {
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  color: white;
+  gap: 15px;
+  font-size: 14px;
+}
+.main__right__header__items a {
+  color: #fff;
+  text-decoration: none;
+}
+.main__right__body {
+  height: 600px;
+  color: white;
+  margin-left: 65px;
+  margin-top: 90px;
+}
+.main__right__body__title {
+  font-size: 37px;
+  font-weight: 500;
+}
+.main__right__body__content {
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 4;
+}
+.main__right__body__content__items {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.main__right__body__content__items a {
+  color: #fff;
+  text-decoration: none;
+}
+.main__right__footer {
+  font-size: 14px;
+  display: flex;
+  color: white;
+  background: transparent;
+  justify-content: space-between;
+}/*# sourceMappingURL=style.css.map */

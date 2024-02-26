@@ -1,0 +1,28 @@
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+}
+
+@mixin backgroundIcons {
+  &__topIcon {
+    right: 50%;
+    top: 1%;
+    position: absolute;
+   
+  }
+  &__middleIcon {
+    right: 2.5%;
+    top: 10%;
+    position: absolute;
+    
+  }
+
+  &__bottomIcon {
+    right: 12%;
+    top: 80%;
+    position: absolute;
+    
+  }
+}
+
+  
